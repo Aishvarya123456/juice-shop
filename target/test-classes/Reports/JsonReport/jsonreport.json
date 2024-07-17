@@ -1,0 +1,301 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2024-07-17T12:41:19.906Z",
+        "before": [
+          {
+            "result": {
+              "duration": 10603052700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.beforeScenario()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "User adds an item to basket and completes the checkout process",
+        "description": "",
+        "id": "online-shopping-checkout-process;user-adds-an-item-to-basket-and-completes-the-checkout-process",
+        "after": [
+          {
+            "result": {
+              "duration": 94300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3453200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user is on the online shopping website",
+            "match": {
+              "location": "JuiceAppSteps.the_user_is_on_the_online_shopping_website()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 807617500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the user adds the \"Apple Juice\" item to the basket",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Apple Juice\"",
+                  "offset": 18
+                }
+              ],
+              "location": "JuiceAppSteps.the_user_adds_the_item_to_the_basket(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 213267100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the user proceeds to checkout",
+            "match": {
+              "location": "JuiceAppSteps.the_user_proceeds_to_checkout()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 104137100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the user enters the shipping address",
+            "match": {
+              "location": "JuiceAppSteps.the_user_enters_the_shipping_address(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Field",
+                  "Value"
+                ]
+              },
+              {
+                "cells": [
+                  "Name",
+                  "Aishvarya"
+                ]
+              },
+              {
+                "cells": [
+                  "Street Address",
+                  "31 Abirami nagar"
+                ]
+              },
+              {
+                "cells": [
+                  "Phone",
+                  "9999999999"
+                ]
+              },
+              {
+                "cells": [
+                  "Country",
+                  "India"
+                ]
+              },
+              {
+                "cells": [
+                  "City",
+                  "Chennai"
+                ]
+              },
+              {
+                "cells": [
+                  "State",
+                  "TamilNadu"
+                ]
+              },
+              {
+                "cells": [
+                  "ZIP Code",
+                  "600045"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 126520600,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "the user submits the shipping address",
+            "match": {
+              "location": "JuiceAppSteps.the_user_submits_the_shipping_address()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 266686700,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "the user should see delivery speed options",
+            "match": {
+              "location": "JuiceAppSteps.the_user_should_see_delivery_speed_options()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 936714700,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "the user enters the payment details",
+            "match": {
+              "location": "JuiceAppSteps.the_user_enters_the_payment_details(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Field",
+                  "Value"
+                ]
+              },
+              {
+                "cells": [
+                  "Cardholder Name",
+                  "Aishvarya"
+                ]
+              },
+              {
+                "cells": [
+                  "Card Number",
+                  "9876543210988765"
+                ]
+              },
+              {
+                "cells": [
+                  "Expiry Month",
+                  "3"
+                ]
+              },
+              {
+                "cells": [
+                  "Expiry Year",
+                  "2080"
+                ]
+              }
+            ],
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@all"
+          },
+          {
+            "name": "@ui"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2024-07-17T12:41:33.043Z",
+        "line": 28,
+        "name": "To validate the api for add a unique card details",
+        "description": "",
+        "id": "online-shopping-checkout-process;to-validate-the-api-for-add-a-unique-card-details",
+        "after": [
+          {
+            "result": {
+              "duration": 73900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 944252100,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "Add the base uri",
+            "match": {
+              "location": "CardAPITest.add_the_base_uri()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 901267000,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "call the GET method with card details api to get added card details",
+            "match": {
+              "location": "CardAPITest.call_the_get_method_with_card_details_api_to_get_added_card_details()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 644203500,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "Verify the card details added is the payment options",
+            "match": {
+              "location": "CardAPITest.verify_the_card_details_added_is_the_payment_options()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@all"
+          },
+          {
+            "name": "@api"
+          }
+        ]
+      }
+    ],
+    "name": "Online Shopping Checkout Process",
+    "description": "",
+    "id": "online-shopping-checkout-process",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/Juiceshop.feature",
+    "tags": [
+      {
+        "name": "@all",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
